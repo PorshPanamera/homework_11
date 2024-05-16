@@ -12,5 +12,8 @@ if (num.length !== 6) {
   let q = numbers[4];
   let w = numbers[5];
   numbers.splice(2, 3);
+  numbers.sort(function (a, b) {
+    return a - b;
+  });
   console.log(numbers);
 }
